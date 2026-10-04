@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خورشید | تابلوهای نقاشی و برجسته</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">KHROSHID ART</div>
+        <nav>
+            <a href="index.html" class="active" data-fa="نقاشی و تابلو" data-en="Paintings & Reliefs">نقاشی و تابلو</a>
+            <a href="papier-mache.html" data-fa="مجسمه و پاپیه ماشه" data-en="Papier-Mâché">مجسمه و پاپیه ماشه</a>
+            <button class="lang-switch" onclick="toggleLanguage()">🌐 <span id="lang-text">English</span></button>
+        </nav>
+    </header>
+
+    <div class="carpet-banner">
+        <img src="src/pazyrik.png" alt="Pazyrik Motif Banner">
+    </div>
+
+    <section class="hero">
+        <h1 data-fa="تابلوهای نقش‌برجسته و نقاشی" data-en="Relief Paintings & Fine Art">تابلوهای نقش‌برجسته و نقاشی</h1>
+        <p data-fa="آثار دیواری برجسته و مدرن با الهام از نمادهای سنتی ایرانی برای کلکسیون‌های بین‌المللی" 
+           data-en="Modern relief and fine wall art inspired by Persian traditional motifs for international collectors.">
+           آثار دیواری برجسته و مدرن با الهام از نمادهای سنتی ایرانی برای کلکسیون‌های بین‌المللی
+        </p>
+    </section>
+
+    <main class="gallery">
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMG(2).jpg')">
+                <img src="src/IMG(2).jpg" alt="Blossom and Bird" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="پرنده و شکوفه‌های زرین" data-en="Bird & Golden Blossoms">پرنده و شکوفه‌های زرین</h2>
+                <div class="art-meta" data-fa="نقش‌برجسته و ورقه طلا روی بوم" data-en="Relief Technique & Gold Leaf on Canvas">نقش‌برجسته و ورقه طلا روی بوم</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMG(3).jpg')">
+                <img src="src/IMG(3).jpg" alt="Starry Night Interpretation" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="شب پرستاره (سه لتی)" data-en="Starry Night Reimagined (Triptych)">شب پرستاره (سه لتی)</h2>
+                <div class="art-meta" data-fa="رنگ روغن بافت‌دار (مجموعه ۳ تکه)" data-en="Textured Oil Painting (Set of 3)">رنگ روغن بافت‌دار (مجموعه ۳ تکه)</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMG(4).jpg')">
+                <img src="src/IMG(4).jpg" alt="Bicycle and Floral Basket" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="سبد گل و دوچرخه" data-en="Bicycle & Floral Basket">سبد گل و دوچرخه</h2>
+                <div class="art-meta" data-fa="میکس‌مدیا بافت‌دار با پتینه طلا" data-en="Textured Mixed-Media with Gold Patina">میکس‌مدیا بافت‌دار با پتینه طلا</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMG(5).jpg')">
+                <img src="src/IMG(5).jpg" alt="Portrait with Flowers" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="پرتره نگار" data-en="Botanical Portrait">پرتره نگار</h2>
+                <div class="art-meta" data-fa="نقش‌برجسته مدرن روی بوم" data-en="Modern Relief on Canvas">نقش‌برجسته مدرن روی بوم</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMG(6).jpg')">
+                <img src="src/IMG(6).jpg" alt="Cherry Branch on Brick" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="شاخه سرخ و اسلیمی" data-en="Crimson Branch & Arabesque">شاخه سرخ و اسلیمی</h2>
+                <div class="art-meta" data-fa="بافت آجری و نقش‌برجسته با پتینه طلا" data-en="Brick Relief Texture with Gold Accents">بافت آجری و نقش‌برجسته با پتینه طلا</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMG(7).jpg')">
+                <img src="src/IMG(7).jpg" alt="Woman with White Doves" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="پرواز کبوتران سپید" data-en="Flight of White Doves">پرواز کبوتران سپید</h2>
+                <div class="art-meta" data-fa="پرتره مفهومی با مرغان برجسته" data-en="Conceptual Relief Portrait">پرتره مفهومی با مرغان برجسته</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMG(8).jpg')">
+                <img src="src/IMG(8).jpg" alt="Golden Fish Diptych" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="ماهی‌های طلایی و ماندالا (دولت)" data-en="Golden Koi & Mandalas (Diptych)">ماهی‌های طلایی و ماندالا (دولت)</h2>
+                <div class="art-meta" data-fa="میکس مدیا با ورقه طلا (۲ تکه)" data-en="Mixed-Media with Gold Leaf (Set of 2)">میکس مدیا با ورقه طلا (۲ تکه)</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <section class="palette-section">
+        <h3 class="palette-title" data-fa="پالت رنگی" data-en="Color Palette">پالت رنگی</h3>
+        <div class="palette-grid">
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #701C1C;"></div>
+                <span class="swatch-code">#701C1C</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #790914;"></div>
+                <span class="swatch-code">#790914</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #AB3924;"></div>
+                <span class="swatch-code">#AB3924</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #C37237;"></div>
+                <span class="swatch-code">#C37237</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #FFFFFF;"></div>
+                <span class="swatch-code">#FFFFFF</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="fullImage" src="" alt="Full View">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Khorshid Art Gallery. <span data-fa="تمامی حقوق محفوظ است." data-en="All rights reserved.">تمامی حقوق محفوظ است.</span></p>
+    </footer>
+
+    <script>
+        let currentLang = localStorage.getItem('siteLanguage') || 'fa';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('siteLanguage', lang);
+            
+            const html = document.documentElement;
+            const langText = document.getElementById('lang-text');
+            const elements = document.querySelectorAll('[data-fa][data-en]');
+
+            if (lang === 'en') {
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                if (langText) langText.textContent = 'فارسی';
+            } else {
+                html.setAttribute('lang', 'fa');
+                html.setAttribute('dir', 'rtl');
+                if (langText) langText.textContent = 'English';
+            }
+            
+            elements.forEach(el => el.textContent = el.getAttribute(`data-${lang}`));
+        }
+
+        function toggleLanguage() {
+            const newLang = currentLang === 'fa' ? 'en' : 'fa';
+            applyLanguage(newLang);
+        }
+
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const fullImg = document.getElementById('fullImage');
+            fullImg.src = imgSrc;
+            modal.classList.add('show');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyLanguage(currentLang);
+        });
+    </script>
+</body>
+</html>
