@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خورشید | مجسمه و پاپیه ماشه</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">KHROSHID ART</div>
+        <nav>
+            <a href="index.html" data-fa="نقاشی و تابلو" data-en="Paintings & Reliefs">نقاشی و تابلو</a>
+            <a href="papier-mache.html" class="active" data-fa="مجسمه و پاپیه ماشه" data-en="Papier-Mâché">مجسمه و پاپیه ماشه</a>
+            <button class="lang-switch" onclick="toggleLanguage()">🌐 <span id="lang-text">English</span></button>
+        </nav>
+    </header>
+
+    <div class="carpet-banner">
+        <img src="src/pazyrik.png" alt="Pazyrik Motif Banner">
+    </div>
+
+    <section class="hero">
+        <h1 data-fa="مجسمه‌ها و آثار پاپیه ماشه" data-en="Sculptures & Papier-Mâché">مجسمه‌ها و آثار پاپیه ماشه</h1>
+        <p data-fa="مجموعه‌ای از مجسمه‌ها و ظروف دست‌ساز پاپیه ماشه با طراحی‌های خاص" 
+           data-en="A collection of handcrafted papier-mâché sculptures and decorative artworks.">
+           مجموعه‌ای از مجسمه‌ها و ظروف دست‌ساز پاپیه ماشه با طراحی‌های خاص
+        </p>
+    </section>
+
+    <main class="gallery">
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(9).jpg')">
+                <img src="src/IMGP(9).jpg" alt="Papier-Mache 9" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۹" data-en="Papier-Mâché Sculpture IX">مجسمه پاپیه ماشه ۹</h2>
+                <div class="art-meta" data-fa="فرم دکوراتیو برجسته" data-en="Relief Decorative Form">فرم دکوراتیو برجسته</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(10).jpg')">
+                <img src="src/IMGP(10).jpg" alt="Papier-Mache 10" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۰" data-en="Papier-Mâché Sculpture X">مجسمه پاپیه ماشه ۱۰</h2>
+                <div class="art-meta" data-fa="طراحی تلفیقی کلاسیک و مدرن" data-en="Classical & Modern Fusion Design">طراحی تلفیقی کلاسیک و مدرن</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(11).jpg')">
+                <img src="src/IMGP(11).jpg" alt="Papier-Mache 11" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۱" data-en="Papier-Mâché Sculpture XI">مجسمه پاپیه ماشه ۱۱</h2>
+                <div class="art-meta" data-fa="رنگ‌آمیزی ظریف دستی" data-en="Delicate Hand-Painted Detailing">رنگ‌آمیزی ظریف دستی</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(12).jpg')">
+                <img src="src/IMGP(12).jpg" alt="Papier-Mache 12" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۲" data-en="Papier-Mâché Sculpture XII">مجسمه پاپیه ماشه ۱۲</h2>
+                <div class="art-meta" data-fa="طراحی مجسمه‌ای ارگانیک" data-en="Organic Sculptural Design">طراحی مجسمه‌ای ارگانیک</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(13).jpg')">
+                <img src="src/IMGP(13).jpg" alt="Papier-Mache 13" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۳" data-en="Papier-Mâché Sculpture XIII">مجسمه پاپیه ماشه ۱۳</h2>
+                <div class="art-meta" data-fa="پاپیه ماشه با بافت ویژه" data-en="Textured Papier-Mâché Art">پاپیه ماشه با بافت ویژه</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(14).jpg')">
+                <img src="src/IMGP(14).jpg" alt="Papier-Mache 14" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۴" data-en="Papier-Mâché Sculpture XIV">مجسمه پاپیه ماشه ۱۴</h2>
+                <div class="art-meta" data-fa="دست‌ساز با جلوه مات" data-en="Handmade Matte Finish">دست‌ساز با جلوه مات</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(15).jpg')">
+                <img src="src/IMGP(15).jpg" alt="Papier-Mache 15" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۵" data-en="Papier-Mâché Sculpture XV">مجسمه پاپیه ماشه ۱۵</h2>
+                <div class="art-meta" data-fa="طراحی معاصر و انتزاعی" data-en="Contemporary Abstract Form">طراحی معاصر و انتزاعی</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(16).jpg')">
+                <img src="src/IMGP(16).jpg" alt="Papier-Mache 16" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۶" data-en="Papier-Mâché Sculpture XVI">مجسمه پاپیه ماشه ۱۶</h2>
+                <div class="art-meta" data-fa="نقوش دستی با جزئیات بالا" data-en="High-Detail Handwork">نقوش دستی با جزئیات بالا</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(17).jpg')">
+                <img src="src/IMGP(17).jpg" alt="Papier-Mache 17" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۷" data-en="Papier-Mâché Sculpture XVII">مجسمه پاپیه ماشه ۱۷</h2>
+                <div class="art-meta" data-fa="تزیینات ورقه طلا و رزین" data-en="Gold Leaf & Resin Finishing">تزیینات ورقه طلا و رزین</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="art-card">
+            <div class="art-image-container" onclick="openModal('src/IMGP(18).jpg')">
+                <img src="src/IMGP(18).jpg" alt="Papier-Mache 18" class="art-image">
+            </div>
+            <div class="art-details">
+                <h2 class="art-title" data-fa="مجسمه پاپیه ماشه ۱۸" data-en="Papier-Mâché Sculpture XVIII">مجسمه پاپیه ماشه ۱۸</h2>
+                <div class="art-meta" data-fa="ساختار مقاوم و سبک" data-en="Lightweight & Durable Structure">ساختار مقاوم و سبک</div>
+                <div class="art-footer">
+                    <span class="art-price" data-fa="استعلام قیمت" data-en="Inquire Price">استعلام قیمت</span>
+                    <button class="btn-inquire" data-fa="سفارش" data-en="Inquire">سفارش</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <section class="palette-section">
+        <h3 class="palette-title" data-fa="پالت رنگی" data-en="Color Palette">پالت رنگی</h3>
+        <div class="palette-grid">
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #701C1C;"></div>
+                <span class="swatch-code">#701C1C</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #790914;"></div>
+                <span class="swatch-code">#790914</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #AB3924;"></div>
+                <span class="swatch-code">#AB3924</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #C37237;"></div>
+                <span class="swatch-code">#C37237</span>
+            </div>
+            <div class="swatch-card">
+                <div class="swatch-box" style="background-color: #FFFFFF;"></div>
+                <span class="swatch-code">#FFFFFF</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="fullImage" src="" alt="Full View">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Khorshid Art Gallery. <span data-fa="تمامی حقوق محفوظ است." data-en="All rights reserved.">تمامی حقوق محفوظ است.</span></p>
+    </footer>
+
+    <script>
+        let currentLang = localStorage.getItem('siteLanguage') || 'fa';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('siteLanguage', lang);
+            
+            const html = document.documentElement;
+            const langText = document.getElementById('lang-text');
+            const elements = document.querySelectorAll('[data-fa][data-en]');
+
+            if (lang === 'en') {
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                if (langText) langText.textContent = 'فارسی';
+            } else {
+                html.setAttribute('lang', 'fa');
+                html.setAttribute('dir', 'rtl');
+                if (langText) langText.textContent = 'English';
+            }
+            
+            elements.forEach(el => el.textContent = el.getAttribute(`data-${lang}`));
+        }
+
+        function toggleLanguage() {
+            const newLang = currentLang === 'fa' ? 'en' : 'fa';
+            applyLanguage(newLang);
+        }
+
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const fullImg = document.getElementById('fullImage');
+            fullImg.src = imgSrc;
+            modal.classList.add('show');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyLanguage(currentLang);
+        });
+    </script>
+</body>
+  </html>
